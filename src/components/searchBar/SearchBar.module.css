@@ -1,0 +1,46 @@
+.SearchBar {
+  margin-top: 10px
+}
+
+.possibleResults {
+  height: 10rem;
+  /* max-width: 300px; */
+  overflow-y: scroll;
+  /* background-color: gray; */
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.possibleResults > div {
+  flex: 1 1 33%;
+  /* background-color: aqua; */
+  height: calc(1em + 4px);
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.possibleResults > div > div {
+  width: 50%;
+}
+
+.possibleResults::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+.Search > form {
+  margin-bottom: 10px;
+}
+
+.possibleResults > div > div{
+  cursor: pointer;
+}
